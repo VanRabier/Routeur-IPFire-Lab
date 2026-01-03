@@ -68,62 +68,59 @@ Ce projet consiste à utiliser IPFire comme routeur afin d’assurer le routage 
 	- Toujours dans le **Menu de configuration réseau**
 		- L’option Configuration d’adresses a été sélectionnée
 			- Pour l’interface RED, le DHCP a été activé
-			- Pour l'interface - GREEN, Pour l’interface GREEN, l’adresse IP du routeur et le masque de sous-réseau ont été renseignés
+			- Pour l’interface GREEN, l’adresse IP du routeur et le masque de sous-réseau ont été renseignés
 	- Une fois la configuration terminée, le serveur DHCP a été activé et une plage d’adresses a été définie
-###### *Ref 1: Virtual Network Editor*
-<img width="329" height="249" alt="RT_IPfire_Configurationdadresse" src="https://github.com/user-attachments/assets/50c35d0b-8278-4b7f-962a-887f767c005a" />
 
-###### *Ref 1: Virtual Network Editor*
+###### *Ref 1: Parametrage IP pour l'interface RED*
 <img width="326" height="248" alt="RT_IPfire_DHCP_RED" src="https://github.com/user-attachments/assets/fe43cb09-30ec-4f46-a488-80ad857cfad2" />
 
-###### *Ref 1: Virtual Network E*
+###### *Ref 1: Parametrage IP pour l'interface GREEN*
 <img width="327" height="247" alt="RT_IPfire_AdresseIP_GREEN" src="https://github.com/user-attachments/assets/0aeed4a3-5875-458e-979d-5f5df62d12a1" />
 
-###### *Ref 1: Virtual Network Editor*
+###### *Ref 1: Configuration du serveur DHCP*
 <img width="323" height="248" alt="RT_IPfire_ConfigurationDHCP" src="https://github.com/user-attachments/assets/16e1dedb-3e1d-4c0a-8400-290a03d89d03" />
 
    ### Tests de connectivité
   - Connexion à IPFire en tant que root
 	- Vérification des paramètres réseau avec la commande ip a
-*Ref 1: Virtual Network Editor*
-**RT_IPfire**
-	
 	- Vérification de la connexion Internet avec ping 8.8.8.8
-*Ref 1: Virtual Network Editor*
-**RT_IPfire**
-	
 	- Vérification du DNS avec ping perdu.com
-*Ref 1: Virtual Network Editor*
-**RT_IPfire_TestDNS**
+###### *Ref 1: Vérification des paramètres réseau*
+<img width="335" height="257" alt="RT_IPfire_ipa" src="https://github.com/user-attachments/assets/c538f89a-9727-44a2-a145-872f8e190e99" />
+
+###### *Ref 1: Vérification de la connexion Internet et du DNS*
+<img width="281" height="259" alt="RT_IPfire_TestDNS" src="https://github.com/user-attachments/assets/6f0e76dc-a551-431c-9606-ef60c36c0896" />
 
 ### Accès et configuration via l’interface Web IPFire
 - Creer une VM Windows client
-	- Selectionner Host-only pour la carte reseau
-*Ref 1: Virtual Network Editor*
-**RT_IPfireClienthostonly**
-	
+	- Selectionner custom 'Host-only' pour la carte reseau
 	- Demarre la VM et entrer ipconfig/all dans la ligne de commande
 	to check network settings
-**RT_IPfireClientIPCONFIGALL**
-*Ref 1: Virtual Network Editor*
-	
-	- Tests de diagnostic :
-		- Ping du routeur afin de vérifier la communication entre les machines
-**RT_IPfireClient-router**
-*Ref 1: Virtual Network Editor*
-	
-		- Ping de 8.8.8.8 afin de vérifier l’accès Internet depuis le réseau GREEN
-**RT_IPfire_ClientPING**
-*Ref 1: Virtual Network Editor*
-	
-		- Exécution de la commande tracert perdu.com afin de valider le routage via IPFire
-**RT_IPfire_Clienttracert**
-*Ref 1: Virtual Network Editor*
+###### *Ref 1: Network Connection: Custom 'Host-only'*
+<img width="566" height="508" alt="RT_IPfire_Clienthost-only" src="https://github.com/user-attachments/assets/928fb175-1e82-4dc0-964f-574111630fdc" />
+
+###### *Ref 1: Network Settings*
+<img width="495" height="325" alt="RT_IPfire_ClientIPCONFIGALL" src="https://github.com/user-attachments/assets/47c8f108-5073-48aa-a2e8-3433ade3bcb6" />
+
+- Tests de diagnostic :
+	- Ping du routeur afin de vérifier la communication entre les machines
+	- Ping de 8.8.8.8 afin de vérifier l’accès Internet depuis le réseau GREEN
+	- Exécution de la commande tracert perdu.com afin de valider le routage via IPFire
+		
+###### *Ref 1: Vérification de la communication entre les machines*
+<img width="356" height="149" alt="RT_IPfire_Client-router" src="https://github.com/user-attachments/assets/e1b2e6bd-aaf8-4776-95b3-e858540a8043" />
+
+###### *Ref 1: Vérification de l’accès Internet depuis le réseau GREEN*
+<img width="355" height="148" alt="RT_IPfire_ClientPING" src="https://github.com/user-attachments/assets/ecff4cbb-c598-444c-a00b-61892aeed032" />
+
+###### *Ref 1: Validation du routage via IPFire*
+<img width="446" height="193" alt="RT_IPfire_Clienttracertp" src="https://github.com/user-attachments/assets/7c2d3740-15cb-4994-a2fc-6bd355500875" />
 
 - Administration d’IPFire
 	- Accès à l’interface Web via le navigateur: https://192.168.1.254:444
 	- Connexion à l’interface d’administration
-*Ref 1: Virtual Network Editor*
-**RT_IPfire_WEBlogin**
-*Ref 1: Virtual Network Editor*
-**RT_IPfire_WEBpageprincipale**
+###### *Ref 1: Connexion à l’interface d’administration*
+<img width="803" height="428" alt="RT_IPfire_WEBlogin" src="https://github.com/user-attachments/assets/8e8c02b0-e514-4d1f-8e6b-e84a23c4095d" />
+
+###### *Ref 1: L’interface d’administration*
+<img width="521" height="191" alt="RT_IPfire_WEBpageprincipale" src="https://github.com/user-attachments/assets/54622148-54b9-4a82-a388-3dadabaeb1a4" />
