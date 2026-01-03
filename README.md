@@ -63,7 +63,7 @@ Ce projet consiste à utiliser IPFire comme routeur afin d’assurer le routage 
 ###### *Ref 5: Nom d'hôte*
 <img width="206" height="112" alt="RT_IPfire_Nom" src="https://github.com/user-attachments/assets/31c4d2da-d096-4336-9f87-c1d86cfa8cbf" />
 
-###### *Ref 6: Nom de domaine*
+###### *Ref 6: Nom du domaine*
 <img width="329" height="251" alt="RT_IPfire_lab local" src="https://github.com/user-attachments/assets/16b046e8-4083-41de-8c50-09c4305939ff" />
 
 ### Configuration des interfaces réseau
@@ -87,10 +87,10 @@ Ce projet consiste à utiliser IPFire comme routeur afin d’assurer le routage 
 			- Pour l’interface GREEN, l’adresse IP du routeur et le masque de sous-réseau ont été renseignés.
 	- Une fois la configuration terminée, le serveur DHCP a été activé et une plage d’adresses a été définie.
 
-###### *Ref 9: Parametrage IP pour l'interface RED*
+###### *Ref 9: Paramétrage IP pour l'interface RED*
 <img width="326" height="248" alt="RT_IPfire_DHCP_RED" src="https://github.com/user-attachments/assets/fe43cb09-30ec-4f46-a488-80ad857cfad2" />
 
-###### *Ref 10: Parametrage IP pour l'interface GREEN*
+###### *Ref 10: Paramétrage IP pour l'interface GREEN*
 <img width="327" height="247" alt="RT_IPfire_AdresseIP_GREEN" src="https://github.com/user-attachments/assets/0aeed4a3-5875-458e-979d-5f5df62d12a1" />
 
 ###### *Ref 11: Configuration du serveur DHCP*
