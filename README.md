@@ -60,10 +60,10 @@ Ce projet consiste à utiliser IPFire comme routeur afin d’assurer le routage 
 - La machine a été nommée RT-IPfire et le domaine lab.local a été défini.
 - Un mot de passe root a été créé et confirmé.
 - Un mot de passe administrateur a été créé afin de se connecter à l’interface Web d’administration d'IPfire
-###### Ref 5: Nom d'hôte
+###### *Ref 5: Nom d'hôte*
 <img width="206" height="112" alt="RT_IPfire_Nom" src="https://github.com/user-attachments/assets/31c4d2da-d096-4336-9f87-c1d86cfa8cbf" />
 
-###### Ref 6: Nom de domaine
+###### *Ref 6: Nom de domaine*
 <img width="329" height="251" alt="RT_IPfire_lab local" src="https://github.com/user-attachments/assets/16b046e8-4083-41de-8c50-09c4305939ff" />
 
 ### Configuration des interfaces réseau
