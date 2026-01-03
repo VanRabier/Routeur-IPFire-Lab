@@ -11,6 +11,15 @@ Ce projet consiste à utiliser IPFire comme routeur afin d’assurer le routage 
 - Diagnostic et dépannage réseau
 - Documentation technique
 
+## Environnement & outils
+- IPFire
+- Machine virtuelle (VMware)
+- Réseaux virtuels (Host-only, Bridged)
+
+## 🌐 Architecture réseau
+- **RED (WAN)** : accès Internet
+- **GREEN (LAN)** : réseau interne sécurisé
+
 ## Configuration réalisée
 ### Préparation de l’environnement (VMware).
 - Création d’un réseau personnalisé Host-only
@@ -44,11 +53,14 @@ Ce projet consiste à utiliser IPFire comme routeur afin d’assurer le routage 
 <img width="561" height="505" alt="RT_IPfire_MAChost-only" src="https://github.com/user-attachments/assets/64fe9f7d-7093-4e6f-ac51-215314667d88" />
 
 ### Installation d’IPFire
-- La machine virtuelle a été démarrée
-- IPFire a été installé en suivant l’assistant d’installation
-- La langue du système a été sélectionnée
-- Le système de fichiers ext4 a été choisi
-- Le clavier et le fuseau horaire ont été configurés
+- La langue française a été sélectionnée pour l’installation
+- L’option de suppression de toutes les données a été choisie afin de poursuivre la configuration du disque.
+- Le système de fichiers ext4 a été sélectionné.
+- Le système a ensuite été redémarré.
+- La langue du clavier et le fuseau horaire ont été configurés.
+- La machine a été nommée RTipfire et le domaine lab.local a été défini.
+- Un mot de passe root a été créé et confirmé.
+- Un mot de passe administrateur a été créé afin de se connecter à l’interface Web d’administration d'IPfire
 
 ### Configuration des interfaces réseau
 - Attribution des zones RED et GREEN
