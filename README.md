@@ -16,7 +16,7 @@ Ce projet consiste à utiliser IPFire comme routeur afin d’assurer le routage 
 - Machine virtuelle (VMware)
 - Réseaux virtuels (Host-only, Bridged)
 
-## 🌐 Architecture réseau
+## Architecture réseau
 - **RED (WAN)** : accès Internet
 - **GREEN (LAN)** : réseau interne sécurisé
 
@@ -61,6 +61,11 @@ Ce projet consiste à utiliser IPFire comme routeur afin d’assurer le routage 
 - La machine a été nommée RTipfire et le domaine lab.local a été défini.
 - Un mot de passe root a été créé et confirmé.
 - Un mot de passe administrateur a été créé afin de se connecter à l’interface Web d’administration d'IPfire
+###### Ref 5:
+
+
+###### Ref 6:
+
 
 ### Configuration des interfaces réseau
 - Attribution des zones RED et GREEN
@@ -70,10 +75,10 @@ Ce projet consiste à utiliser IPFire comme routeur afin d’assurer le routage 
 		- Dans Affectation des pilotes et des cartes :
 			- L’interface GREEN a été définie avec l’adresse MAC de la carte réseau #2
 			- L’interface RED a été définie avec l’adresse MAC de la carte réseau #1
-###### *Ref 1: Adapteur Reseau pour l'interface - GREEN*
+###### *Ref 6: Adapteur Reseau pour l'interface - GREEN*
 <img width="326" height="251" alt="RT_IPfire_MACgreen" src="https://github.com/user-attachments/assets/ff3029ca-448a-4b3d-bdaf-81e8e865433a" />
 
-###### *Ref 1: Adapteur Reseau pour l'interface - RED*
+###### *Ref 7: Adapteur Reseau pour l'interface - RED*
 <img width="328" height="248" alt="RT_IPfire_MACred" src="https://github.com/user-attachments/assets/bfad7491-c4b3-46e3-a18c-e48eebee74b1" />
 
 - Configuration du routage IP
@@ -83,24 +88,24 @@ Ce projet consiste à utiliser IPFire comme routeur afin d’assurer le routage 
 			- Pour l’interface GREEN, l’adresse IP du routeur et le masque de sous-réseau ont été renseignés
 	- Une fois la configuration terminée, le serveur DHCP a été activé et une plage d’adresses a été définie
 
-###### *Ref 1: Parametrage IP pour l'interface RED*
+###### *Ref 8: Parametrage IP pour l'interface RED*
 <img width="326" height="248" alt="RT_IPfire_DHCP_RED" src="https://github.com/user-attachments/assets/fe43cb09-30ec-4f46-a488-80ad857cfad2" />
 
-###### *Ref 1: Parametrage IP pour l'interface GREEN*
+###### *Ref 9: Parametrage IP pour l'interface GREEN*
 <img width="327" height="247" alt="RT_IPfire_AdresseIP_GREEN" src="https://github.com/user-attachments/assets/0aeed4a3-5875-458e-979d-5f5df62d12a1" />
 
-###### *Ref 1: Configuration du serveur DHCP*
+###### *Ref 10: Configuration du serveur DHCP*
 <img width="323" height="248" alt="RT_IPfire_ConfigurationDHCP" src="https://github.com/user-attachments/assets/16e1dedb-3e1d-4c0a-8400-290a03d89d03" />
 
-   ### Tests de connectivité
+### Tests de connectivité
   - Connexion à IPFire en tant que root
 	- Vérification des paramètres réseau avec la commande ip a
 	- Vérification de la connexion Internet avec ping 8.8.8.8
 	- Vérification du DNS avec ping perdu.com
-###### *Ref 1: Vérification des paramètres réseau*
+###### *Ref 11: Vérification des paramètres réseau*
 <img width="335" height="257" alt="RT_IPfire_ipa" src="https://github.com/user-attachments/assets/c538f89a-9727-44a2-a145-872f8e190e99" />
 
-###### *Ref 1: Vérification de la connexion Internet et du DNS*
+###### *Ref 12: Vérification de la connexion Internet et du DNS*
 <img width="281" height="259" alt="RT_IPfire_TestDNS" src="https://github.com/user-attachments/assets/6f0e76dc-a551-431c-9606-ef60c36c0896" />
 
 ### Accès et configuration via l’interface Web IPFire
@@ -108,10 +113,10 @@ Ce projet consiste à utiliser IPFire comme routeur afin d’assurer le routage 
 	- Selectionner custom 'Host-only' pour la carte reseau
 	- Demarre la VM et entrer ipconfig/all dans la ligne de commande
 	to check network settings
-###### *Ref 1: Network Connection: Custom 'Host-only'*
+###### *Ref 13: Network Connection: Custom 'Host-only'*
 <img width="566" height="508" alt="RT_IPfire_Clienthost-only" src="https://github.com/user-attachments/assets/928fb175-1e82-4dc0-964f-574111630fdc" />
 
-###### *Ref 1: Network Settings*
+###### *Ref 14: Network Settings*
 <img width="495" height="325" alt="RT_IPfire_ClientIPCONFIGALL" src="https://github.com/user-attachments/assets/47c8f108-5073-48aa-a2e8-3433ade3bcb6" />
 
 - Tests de diagnostic :
@@ -119,20 +124,20 @@ Ce projet consiste à utiliser IPFire comme routeur afin d’assurer le routage 
 	- Ping de 8.8.8.8 afin de vérifier l’accès Internet depuis le réseau GREEN
 	- Exécution de la commande tracert perdu.com afin de valider le routage via IPFire
 		
-###### *Ref 1: Vérification de la communication entre les machines*
+###### *Ref 15: Vérification de la communication entre les machines*
 <img width="356" height="149" alt="RT_IPfire_Client-router" src="https://github.com/user-attachments/assets/e1b2e6bd-aaf8-4776-95b3-e858540a8043" />
 
-###### *Ref 1: Vérification de l’accès Internet depuis le réseau GREEN*
+###### *Ref 16: Vérification de l’accès Internet depuis le réseau GREEN*
 <img width="355" height="148" alt="RT_IPfire_ClientPING" src="https://github.com/user-attachments/assets/ecff4cbb-c598-444c-a00b-61892aeed032" />
 
-###### *Ref 1: Validation du routage via IPFire*
+###### *Ref 17: Validation du routage via IPFire*
 <img width="446" height="193" alt="RT_IPfire_Clienttracertp" src="https://github.com/user-attachments/assets/7c2d3740-15cb-4994-a2fc-6bd355500875" />
 
 - Administration d’IPFire
 	- Accès à l’interface Web via le navigateur: https://192.168.1.254:444
 	- Connexion à l’interface d’administration
-###### *Ref 1: Connexion à l’interface d’administration*
+###### *Ref 18: Connexion à l’interface d’administration*
 <img width="803" height="428" alt="RT_IPfire_WEBlogin" src="https://github.com/user-attachments/assets/8e8c02b0-e514-4d1f-8e6b-e84a23c4095d" />
 
-###### *Ref 1: L’interface d’administration*
+###### *Ref 19: L’interface d’administration*
 <img width="521" height="191" alt="RT_IPfire_WEBpageprincipale" src="https://github.com/user-attachments/assets/54622148-54b9-4a82-a388-3dadabaeb1a4" />
