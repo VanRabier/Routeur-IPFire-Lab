@@ -109,7 +109,7 @@ Ce projet consiste à utiliser IPFire comme routeur afin d’assurer le routage 
 
 ### Accès et configuration via l’interface Web IPFire
 - Création une VM Windows client
-	- L'option 'Custom Host-only' a été cochée pour la carte reseau.
+	- L'option 'Custom Host-only' a été cochée pour la carte réseau.
 	- Une fois la VM démarée, l'exécution de la commande ipconfig/all a permis de vérifier les paramètres réseau.
 ###### *Ref 14: Network Connection: Custom 'Host-only'*
 <img width="566" height="508" alt="RT_IPfire_Clienthost-only" src="https://github.com/user-attachments/assets/928fb175-1e82-4dc0-964f-574111630fdc" />
@@ -141,4 +141,5 @@ Ce projet consiste à utiliser IPFire comme routeur afin d’assurer le routage 
 <img width="521" height="191" alt="RT_IPfire_WEBpageprincipale" src="https://github.com/user-attachments/assets/54622148-54b9-4a82-a388-3dadabaeb1a4" />
 
 ### Schéma réseau
+<img width="371" height="841" alt="Schema Routeur IPFire Lab" src="https://github.com/user-attachments/assets/45e0455d-953a-42ea-ab8a-bad8a666a1ab" />
 
