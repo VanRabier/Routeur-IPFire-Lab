@@ -141,5 +141,4 @@ Ce projet consiste à utiliser IPFire comme routeur afin d’assurer le routage 
 <img width="521" height="191" alt="RT_IPfire_WEBpageprincipale" src="https://github.com/user-attachments/assets/54622148-54b9-4a82-a388-3dadabaeb1a4" />
 
 ### Schéma réseau
-<img width="371" height="841" alt="Schema Routeur IPFire Lab" src="https://github.com/user-attachments/assets/45e0455d-953a-42ea-ab8a-bad8a666a1ab" />
-
+<img width="371" height="841" alt="Schema Routeur IPFire Lab" src="https://github.com/user-attachments/assets/1ccaacbe-c49c-480f-a600-54c71cc1f4dd" />
