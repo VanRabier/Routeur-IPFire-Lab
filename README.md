@@ -1,4 +1,4 @@
-# Routeur IPFire Lab
+# Lab Routeur IPFire
 
 ## Présentation du projet
 Ce projet consiste à utiliser IPFire comme routeur afin d’assurer le routage et la sécurisation du trafic réseau entre différents segments.  Il a été réalisé dans un environnement virtualisé, dans le but de mieux comprendre l’architecture d’un réseau simple ainsi que le fonctionnement d’un routeur.
